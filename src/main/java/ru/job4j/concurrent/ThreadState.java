@@ -10,7 +10,9 @@ public class ThreadState {
         );
         first.start();
         second.start();
-        while (first.isAlive() || second.isAlive()) { }
+        while (first.isAlive() || second.isAlive()) {
+            continue;
+        }
         System.out.println("Program completed");
     }
 }
